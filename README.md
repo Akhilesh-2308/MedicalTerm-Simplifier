@@ -96,27 +96,4 @@ pip install -r requirements.txt
 
 3. Run notebook cells sequentially
 
----
 
-## 🧠 Tech Stack
-
-* Python
-* PyTorch
-* Hugging Face Transformers
-* TRL (SFTTrainer)
-* Unsloth
-
----
-
-## 📌 Future Improvements
-
-* Add UI (Streamlit / Web App)
-* Improve dataset diversity
-* Add evaluation metrics
-* Deploy model as API
-
----
-
-## 📜 License
-
-MIT License
