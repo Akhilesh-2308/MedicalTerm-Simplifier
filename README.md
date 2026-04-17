@@ -158,9 +158,6 @@ All parameters are controlled via `config.yaml`:
 
 1. Install dependencies
 
-```
-pip install -r requirements.txt
-```
 
 2. Upload dataset + config
 
