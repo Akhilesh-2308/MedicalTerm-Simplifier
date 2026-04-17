@@ -1,104 +1,122 @@
-Medical Term Simplifier (LLM Fine-Tuning Project)
+# 🧠 Medical Term Simplifier (LLM Fine-Tuning Project)
 
-**📌 Overview**
+## 📌 Overview
 
 This project fine-tunes a Large Language Model (LLM) to convert complex medical terms into simple, easy-to-understand explanations.
 
-It uses:
+---
 
-LoRA (Low-Rank Adaptation)
-4-bit quantization
-Multi-source datasets
-YAML-based configuration
+## ❗ Problem Statement
 
+Medical terminology is difficult for non-medical users to understand. Existing explanations are often too technical and inconsistent.
 
+---
 
-
-
-**❗ Problem Statement**
-
-Medical terminology is difficult for non-medical users to understand. Existing explanations are often too technical and inconsistent across sources.
-
-**💡 Solution**
+## 💡 Solution
 
 We build a fine-tuned LLM that:
-Simplifies medical terms into layman language
-Learns from multiple datasets
-Uses efficient training techniques to run on limited hardware
 
+* Simplifies medical terms into layman language
+* Learns from multiple datasets
+* Uses efficient training techniques (LoRA + quantization)
 
-**⚙️ Key Features**
+---
 
-✅ Config-driven pipeline (YAML)
-✅ Multi-source dataset support
-✅ LoRA-based efficient training
-✅ 4-bit quantization for low memory usage
-✅ Modular and reusable code structure
+## ⚙️ Key Features
 
+* Config-driven pipeline (YAML)
+* Multi-source dataset support
+* LoRA-based efficient training
+* 4-bit quantization for low memory usage
+* Modular and reusable code
 
-**🏗️ Project Structure**
+---
 
+## 🏗️ Project Structure
+
+```
 .
-├── config.yaml          # All configurations
+├── notebook.ipynb
+├── config.yaml
+├── dataset.json
+├── README.md
+├── requirements.txt
+```
 
-├── notebook.ipynb       # Main training pipeline
+---
 
-├── dataset.json         # Local dataset
+## 🔄 Pipeline Overview
 
-├── README.md            # Project documentation
+1. Load Config (YAML)
+2. Load & Merge Datasets
+3. Format Prompts
+4. Load Model + Apply LoRA
+5. Train Model
+6. Run Inference
 
+---
 
-**🔄 Pipeline Overview**
+## 🧪 Example Output
 
-Load Config (YAML)
-Load & Merge Datasets
-Format Prompts
-Load Model + Apply LoRA
-Train using SFTTrainer
-Run Inference
+**Input:**
 
-
-**🧪 Example Output**
-
-Input:
-
+```
 Myocardial infarction
+```
 
-Output:
+**Output:**
 
+```
 A myocardial infarction, commonly known as a heart attack,
 occurs when blood flow to the heart is blocked...
+```
 
+---
 
-**⚙️ Configuration (config.yaml)**
+## ⚙️ Configuration
 
-All parameters are controlled via YAML:
+All parameters are controlled via `config.yaml`:
 
-Model settings
+* Model settings
+* Dataset sources
+* Training hyperparameters
+* Inference settings
 
-Dataset sources
+---
 
-Training hyperparameters
+## 🚀 How to Run
 
-Inference settings
+1. Install dependencies
 
-
-
-**🚀 How to Run**
-
-Install dependencies
-
+```
 pip install -r requirements.txt
+```
 
-Upload dataset + config
+2. Upload dataset + config
 
-Run notebook cells sequentially
+3. Run notebook cells sequentially
 
+---
 
-**📊 Training Techniques Used**
+## 🧠 Tech Stack
 
-LoRA (Low-Rank Adaptation)
+* Python
+* PyTorch
+* Hugging Face Transformers
+* TRL (SFTTrainer)
+* Unsloth
 
-Quantization (4-bit)
+---
 
-Supervised Fine-Tuning (SFT)
+## 📌 Future Improvements
+
+* Add UI (Streamlit / Web App)
+* Improve dataset diversity
+* Add evaluation metrics
+* Deploy model as API
+
+---
+
+## 📜 License
+
+MIT License
