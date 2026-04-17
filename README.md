@@ -97,7 +97,7 @@ It is tailored specifically for this project to improve clarity and readability 
 The fine-tuned model is available on Hugging Face:
 
 👉 **Model Link:**
-https://huggingface.co/YOUR_USERNAME/YOUR_MODEL_NAME
+https://huggingface.co/Akhilesh-2308/Medical-Term_simplifier
 
 > Replace the above link with your actual Hugging Face model URL
 
