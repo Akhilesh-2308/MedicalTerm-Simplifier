@@ -111,7 +111,6 @@ https://huggingface.co/YOUR_USERNAME/YOUR_MODEL_NAME
 ├── config.yaml
 ├── dataset.json
 ├── README.md
-├── requirements.txt
 ```
 
 ---
