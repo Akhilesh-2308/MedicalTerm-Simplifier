@@ -32,6 +32,77 @@ We build a fine-tuned LLM that:
 
 ---
 
+## 📚 Dataset Sources
+
+This project uses a combination of publicly available medical datasets, each contributing different types of knowledge:
+
+---
+
+### 🩺 ChatDoctor Dataset
+
+https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k
+
+A large dataset of doctor-patient conversations collected from medical forums.
+It contains real-world health queries and responses, making it useful for training conversational medical explanations.
+
+---
+
+### 🔬 PubMedQA
+
+https://huggingface.co/datasets/pubmed_qa
+
+A biomedical question-answering dataset based on scientific research papers.
+It focuses on evidence-based answers derived from PubMed articles, improving factual accuracy.
+
+---
+
+### 🧠 MedMCQA
+
+https://huggingface.co/datasets/medmcqa
+
+A multiple-choice question dataset from medical entrance exams.
+It helps the model learn precise medical concepts and correct answers through structured options.
+
+---
+
+### 📘 Medical Meadow (Flashcards + WikiDoc)
+
+https://huggingface.co/datasets/medalpaca/medical_meadow
+
+A collection of medical flashcards and patient-friendly explanations.
+It is useful for simplifying complex medical concepts into easy-to-understand language.
+
+---
+
+### 🏥 MedQuAD
+
+https://huggingface.co/datasets/medquad
+
+A curated dataset of medical question-answer pairs from trusted health websites.
+It provides high-quality, structured medical information for common health conditions.
+
+---
+
+### 🧾 Local Curated Dataset
+
+(Custom JSON dataset)
+
+A manually created dataset containing simplified medical explanations.
+It is tailored specifically for this project to improve clarity and readability of outputs.
+
+---
+
+## 🤖 Trained Model
+
+The fine-tuned model is available on Hugging Face:
+
+👉 **Model Link:**
+https://huggingface.co/YOUR_USERNAME/YOUR_MODEL_NAME
+
+> Replace the above link with your actual Hugging Face model URL
+
+---
+
 ## 🏗️ Project Structure
 
 ```
@@ -95,5 +166,4 @@ pip install -r requirements.txt
 2. Upload dataset + config
 
 3. Run notebook cells sequentially
-
 
