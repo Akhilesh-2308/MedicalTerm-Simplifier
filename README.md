@@ -49,7 +49,7 @@ It contains real-world health queries and responses, making it useful for traini
 
 ### 🔬 PubMedQA
 
-https://huggingface.co/datasets/pubmed_qa
+https://huggingface.co/datasets/pubmed_qa/viewer/pqa_labeled
 
 A biomedical question-answering dataset based on scientific research papers.
 It focuses on evidence-based answers derived from PubMed articles, improving factual accuracy.
@@ -58,7 +58,7 @@ It focuses on evidence-based answers derived from PubMed articles, improving fac
 
 ### 🧠 MedMCQA
 
-https://huggingface.co/datasets/medmcqa
+https://huggingface.co/datasets/openlifescienceai/medmcqa
 
 A multiple-choice question dataset from medical entrance exams.
 It helps the model learn precise medical concepts and correct answers through structured options.
@@ -67,7 +67,9 @@ It helps the model learn precise medical concepts and correct answers through st
 
 ### 📘 Medical Meadow (Flashcards + WikiDoc)
 
-https://huggingface.co/datasets/medalpaca/medical_meadow
+https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards
+
+https://huggingface.co/datasets/medalpaca/medical_meadow_wikidoc_patient_information
 
 A collection of medical flashcards and patient-friendly explanations.
 It is useful for simplifying complex medical concepts into easy-to-understand language.
@@ -76,7 +78,7 @@ It is useful for simplifying complex medical concepts into easy-to-understand la
 
 ### 🏥 MedQuAD
 
-https://huggingface.co/datasets/medquad
+https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset
 
 A curated dataset of medical question-answer pairs from trusted health websites.
 It provides high-quality, structured medical information for common health conditions.
