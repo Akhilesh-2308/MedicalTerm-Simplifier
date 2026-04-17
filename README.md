@@ -1,6 +1,6 @@
 Medical Term Simplifier (LLM Fine-Tuning Project)
 
-📌 Overview
+**📌 Overview**
 
 This project fine-tunes a Large Language Model (LLM) to convert complex medical terms into simple, easy-to-understand explanations.
 
@@ -12,11 +12,11 @@ Multi-source datasets
 YAML-based configuration
 
 
-❗ Problem Statement
+**❗ Problem Statement**
 
 Medical terminology is difficult for non-medical users to understand. Existing explanations are often too technical and inconsistent across sources.
 
-💡 Solution
+**💡 Solution**
 
 We build a fine-tuned LLM that:
 Simplifies medical terms into layman language
@@ -24,7 +24,7 @@ Learns from multiple datasets
 Uses efficient training techniques to run on limited hardware
 
 
-⚙️ Key Features
+**⚙️ Key Features**
 
 ✅ Config-driven pipeline (YAML)
 ✅ Multi-source dataset support
@@ -33,7 +33,7 @@ Uses efficient training techniques to run on limited hardware
 ✅ Modular and reusable code structure
 
 
-🏗️ Project Structure
+**🏗️ Project Structure**
 
 .
 ├── config.yaml          # All configurations
@@ -45,7 +45,7 @@ Uses efficient training techniques to run on limited hardware
 ├── README.md            # Project documentation
 
 
-🔄 Pipeline Overview
+**🔄 Pipeline Overview**
 
 Load Config (YAML)
 Load & Merge Datasets
@@ -55,7 +55,7 @@ Train using SFTTrainer
 Run Inference
 
 
-🧪 Example Output
+**🧪 Example Output**
 
 Input:
 
@@ -67,7 +67,7 @@ A myocardial infarction, commonly known as a heart attack,
 occurs when blood flow to the heart is blocked...
 
 
-⚙️ Configuration (config.yaml)
+**⚙️ Configuration (config.yaml)**
 
 All parameters are controlled via YAML:
 
@@ -81,7 +81,7 @@ Inference settings
 
 
 
-🚀 How to Run
+**🚀 How to Run**
 
 Install dependencies
 
@@ -92,7 +92,7 @@ Upload dataset + config
 Run notebook cells sequentially
 
 
-📊 Training Techniques Used
+**📊 Training Techniques Used**
 
 LoRA (Low-Rank Adaptation)
 
