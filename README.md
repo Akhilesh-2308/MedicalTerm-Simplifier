@@ -94,7 +94,7 @@ The idea was simple: take a strong open-source model, gather high-quality medica
 
 ### Pipeline Overview
 
-The full training pipeline runs end to end from one `main()` call in `training_pipeline.ipynb`.
+The full training pipeline runs end to end from one `main()` call in `Medical Term Simplifier — Training Pipeline.ipynb`.
 
 ```
 config.yaml
