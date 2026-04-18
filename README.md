@@ -129,7 +129,7 @@ push_to_hub()          ←── LoRA adapter → HuggingFace Hub
 
 | Notebook | Purpose | Cells |
 |---|---|---|
-| `# Medical Term Simplifier — Training Pipeline.ipynb` | Full training — run once | 3 cells → `main()` |
+| `Medical Term Simplifier — Training Pipeline.ipynb` | Full training — run once | 3 cells → `main()` |
 | `Medical Term Simplifier — Demo.ipynb` | Presentation — no training | 3 cells → `main()` |
 
 The demo notebook loads the already-trained model from HuggingFace Hub and runs `main()` which demonstrates 5 terms live.
@@ -227,15 +227,16 @@ The trained model is available on HuggingFace Hub:
 
 **[Akhilesh-2308/medical-term-simplifier](https://huggingface.co/Akhilesh-2308/medical-term-simplifier)**
 
-### Sample outputs
-
-```
-<img width="933" height="378" alt="image" src="https://github.com/user-attachments/assets/c01d572e-1bb0-4ab7-9c52-e9a15673ed6c" />
-
-<img width="903" height="407" alt="image" src="https://github.com/user-attachments/assets/9d498ab1-8566-4cb8-87ae-89e669da521f" />
+## 🧪 Outputs
 
 
-```
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/041a9f03-40ff-4078-997f-b864d1ecbcc4" width="700"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9d498ab1-8566-4cb8-87ae-89e669da521f" width="700"/>
+</p>
 
 ---
 
