@@ -94,6 +94,10 @@ The idea was simple: take a strong open-source model, gather high-quality medica
 
 ### Pipeline Overview
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ce580891-5962-47b1-8583-8c1075d261cb" width="800"/>
+</p>
+
 The full training pipeline runs end to end from one `main()` call in `Medical Term Simplifier — Training Pipeline.ipynb`.
 
 ```
