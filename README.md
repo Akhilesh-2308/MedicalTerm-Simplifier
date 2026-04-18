@@ -129,8 +129,8 @@ push_to_hub()          ←── LoRA adapter → HuggingFace Hub
 
 | Notebook | Purpose | Cells |
 |---|---|---|
-| `training_pipeline.ipynb` | Full training — run once | 3 cells → `main()` |
-| `demo.ipynb` | Presentation — no training | 3 cells → `main()` |
+| `# Medical Term Simplifier — Training Pipeline.ipynb` | Full training — run once | 3 cells → `main()` |
+| `Medical Term Simplifier — Demo.ipynb` | Presentation — no training | 3 cells → `main()` |
 
 The demo notebook loads the already-trained model from HuggingFace Hub and runs `main()` which demonstrates 5 terms live.
 
@@ -230,24 +230,11 @@ The trained model is available on HuggingFace Hub:
 ### Sample outputs
 
 ```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Term   : Myocardial infarction
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  A myocardial infarction is the medical name for a heart attack.
-  It happens when one of the arteries supplying blood to your heart
-  gets blocked. The part of the heart muscle that loses its blood
-  supply begins to die. Symptoms include chest pain, shortness of
-  breath, and pain spreading to your left arm.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img width="933" height="378" alt="image" src="https://github.com/user-attachments/assets/c01d572e-1bb0-4ab7-9c52-e9a15673ed6c" />
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Term   : Pulmonary embolism
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  A pulmonary embolism is a blood clot that has travelled to your
-  lungs. The clot blocks blood flow through the lung, making it
-  hard to breathe and reducing oxygen in your blood. It can be
-  life-threatening and needs immediate medical attention.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<img width="903" height="407" alt="image" src="https://github.com/user-attachments/assets/9d498ab1-8566-4cb8-87ae-89e669da521f" />
+
+
 ```
 
 ---
@@ -256,16 +243,16 @@ The trained model is available on HuggingFace Hub:
 
 ### Training (once)
 
-1. Open `training_pipeline.ipynb` in Google Colab (GPU runtime required — T4 minimum)
+1. Open `Medical Term Simplifier — Training Pipeline.ipynb` in Google Colab (GPU runtime required — T4 minimum)
 2. Upload `config.yaml` and `med_dataset.json` via the file panel
 3. Add your HuggingFace token to Colab Secrets as `HF_TOKEN`
 4. Run Cell 1 (install), Cell 2 (check files), Cell 3 (`main()`)
 
-Training runs for 500 steps (~20–40 min on T4) and pushes the adapter to your HuggingFace Hub automatically.
+Training runs for 500 steps (~ 40-50 min on T4) and pushes the adapter to your HuggingFace Hub automatically.
 
 ### Demo / Presentation
 
-1. Open `demo.ipynb` in Google Colab
+1. Open `Medical Term Simplifier — Demo.ipynb` in Google Colab
 2. Upload `config.yaml` and add `HF_TOKEN` to Colab Secrets
 3. Run Cell 1 (install), Cell 2 (load model from Hub), Cell 3 (`main()`)
 
@@ -298,29 +285,24 @@ FastLanguageModel.for_inference(model)
 ```
 medical-term-simplifier/
 │
-├── training_pipeline.ipynb   # Full training pipeline — run once
-│                             # Cell 3: main() trains + pushes to Hub
+├── Medical Term Simplifier — Training Pipeline.ipynb   # Full training pipeline — run once
+│                                                       # Cell 3: main() trains + pushes to Hub
 │
-├── demo.ipynb                # Presentation notebook — no training
-│                             # Cell 3: main() runs 5 showcase terms live
+├── Medical Term Simplifier — Demo.ipynb                # Demo notebook — no training
+│                                                       # Cell 3: main() runs 5 showcase terms live
 │
-├── config.yaml               # All hyperparameters — single source of truth
-│                             # Keys match API param names exactly (**unpack)
+├── config.yaml                                         # All hyperparameters — single source of truth
+│                                                       # Keys match API param names exactly (**unpack)
 │
-└── med_dataset.json          # Your local curated dataset
-                              # Upload to Colab before running training
+└── med_dataset.json                                    # Your local curated dataset
+                                                        # Upload to Colab before running training
 ```
 
 ---
 
 ## 10. Future Work
 
-- **ROUGE / BERTScore evaluation** — quantify how well the model simplifies compared to reference explanations
-- **More instruction styles** — add domain-specific variants (paediatric, elderly, low-literacy)
-- **Larger base model** — test with Mistral-7B-Instruct or Llama-3-8B for improved baseline quality
-- **Interactive web demo** — deploy via Gradio or Streamlit on HuggingFace Spaces
-- **Multilingual support** — extend to Hindi and other Indian languages for broader accessibility
-- **Symptom-to-condition mapping** — expand beyond term simplification to symptom explanation
+- **CHATBOT** — Will create an chatbot kind of Doctor where it the users can enter an word and the simple explanation can be given.
 
 ---
 
