@@ -307,7 +307,7 @@ medical-term-simplifier/
 
 ## 10. Future Work
 
-- **CHATBOT** — Will create an chatbot kind of Doctor where it the users can enter an word and the simple explanation can be given.
+- **CHATBOT** — Will create a chatbot kind of Doctor where the users can enter a word and a simple explanation can be given.
 
 ---
 
